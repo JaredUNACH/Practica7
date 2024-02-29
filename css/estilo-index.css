@@ -1,0 +1,92 @@
+.icono {
+    width: 30px;
+    height: 30px;
+}
+.logo {
+    width: 180px;
+    height: auto;
+}
+header {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header {
+    background-color: #FFDE59;
+}
+header p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu[role="navigation"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card2 {
+    position: relative;
+}.btn-primary2 {
+    position: absolute;
+    top: 81%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: crimson;
+    border-color: #FFD51E;
+    transition: background-color 0.3s ease;
+    background-color: #FFD51E;
+}
+.btn-primary2:hover {
+    background-color:  #FFDE59;
+    color: crimson;
+}
+.card1 {
+    position: relative;
+}
+.btn-primary1 {
+    position: absolute;
+    top: 86%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: crimson;
+    border-color: #FFD51E;
+    transition: background-color 0.3s ease;
+    background-color: #FFD51E;
+}
+.btn-primary1:hover {
+    background-color:  #FFDE59;
+    color: crimson;
+}
+.card3 {
+    position: relative;
+}
+.btn-primary3 {
+    position: absolute;
+    top: 84%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: crimson;
+    border-color: #FFD51E;
+    transition: background-color 0.3s ease;
+    background-color: #FFD51E;
+}
+.btn-primary3:hover {
+    background-color:  #FFDE59;
+    color: crimson;
+}
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
