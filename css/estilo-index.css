@@ -91,3 +91,11 @@ header p {
 .card-img-top:hover {
     transform: scale(1.1);
 }
+@media (max-width: 992px) {
+    .navbar-brand {
+        font-size: 2rem;
+    }
+    .navbar-nav {
+        font-size: 1.5rem;
+    }
+}
