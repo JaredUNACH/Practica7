@@ -1,8 +1,8 @@
 var pizzasTabClickHandler = function() {
     var images = document.getElementsByClassName('product-image1');
-    images[0].src = 'img/Store-pizza-menu.svg';
-    images[1].src = 'img/Store-pizza-peperoni.svg';
-    images[2].src = 'img/Store-pizza-pastor.svg';
+    images[0].src = 'img/Store-pizza-menu.png';
+    images[1].src = 'img/Store-pizza-peperoni.png';
+    images[2].src = 'img/Store-pizza-cham.png';
 };
 
 document.getElementById('pizzas-tab').addEventListener('click', pizzasTabClickHandler);
@@ -17,9 +17,9 @@ document.getElementById('bebidas-tab').addEventListener('click', function() {
     }
 
     var images = document.getElementsByClassName('product-image2');
-    images[0].src = 'img/Store-bebida-jamaica.svg';
-    images[1].src = 'img/Store-bebida-Margarita.svg';
-    images[2].src = 'img/Store-bebida-horchata.svg';
+    images[0].src = 'img/Store-bebida-cocktail.png';
+    images[1].src = 'img/Store-bebida-Margarita.png';
+    images[2].src = 'img/Store-bebida-horchata.png';
 });
 
 document.getElementById('tacos-tab').addEventListener('click', function() {
@@ -34,9 +34,9 @@ document.getElementById('tacos-tab').addEventListener('click', function() {
     }
 
     var images = document.getElementsByClassName('product-image3');
-    images[0].src = 'img/Store-taco-pastor.svg';
-    images[1].src = 'img/Store-taco-asada.svg';
-    images[2].src = 'img/Store-taco-guacamole.svg';
+    images[0].src = 'img/Store-taco-pastor.png';
+    images[1].src = 'img/Store-taco-cho.png';
+    images[2].src = 'img/Store-taco-guacamole.png';
 });
 
 
