@@ -35,7 +35,7 @@ header p {
     position: relative;
 }.btn-primary2 {
     position: absolute;
-    top: 81%;
+    top: 88%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: transparent;
@@ -53,7 +53,7 @@ header p {
 }
 .btn-primary1 {
     position: absolute;
-    top: 86%;
+    top: 92%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: transparent;
@@ -71,7 +71,7 @@ header p {
 }
 .btn-primary3 {
     position: absolute;
-    top: 84%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: transparent;
@@ -98,4 +98,22 @@ header p {
     .navbar-nav {
         font-size: 1.5rem;
     }
+}
+.menu{
+    margin-bottom: 30px;
+}
+.btn-circle {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+}
+.btn-xl {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+.img-small {
+    width: 200px;
+    height: auto;
 }

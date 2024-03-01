@@ -62,12 +62,12 @@
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-5"></ul>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-5">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Pizzas</a>
+                                <a class="nav-link" href="index.html">Pizzas</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Hamburguesas</a>
@@ -111,11 +111,11 @@
     </div>
     <div class="menu">
         <h2>Conoce nuestro menú</h2>
-            <h6>En nuestro restaurante encontrarás una gran variedad de platillos, desde pizzas, hamburguesas, ensaladas, tacos y bebidas. Contamos con servicio a domicilio, para que disfrutes de nuestros platillos en la comodidad de tu hogar.</h6>
+            <h5>En nuestro restaurante encontrarás una gran variedad de platillos, desde pizzas, hamburguesas, ensaladas, tacos y bebidas. Contamos con servicio a domicilio, para que disfrutes de nuestros platillos en la comodidad de tu hogar.</h5>
     </div>
     <div class="container">
         <div class="row">
-            <section id="section1" class="col-12 col-md-6 col-lg-4">
+            <section id="section1" class="col-12 col-md-6 col-lg-4 mb-5">
                 <article>
                     <div class="card1" style="width: 18rem;">
                         <img src="img/img-card-ensalada.svg" class="card-img-top" alt="Imagen 2">
@@ -126,7 +126,7 @@
                 </article>
             </section>
 
-            <section id="section3" class="col-12 col-md-6 col-lg-4">
+            <section id="section3" class="col-12 col-md-6 col-lg-4 mb-5">
                 <article>
                     <div class="card3" style="width: 18rem;">
                         <img src="img/img-card-bebidas.svg" class="card-img-top" alt="Imagen 2">
@@ -137,7 +137,7 @@
                 </article>
             </section>
 
-            <section id="section2" class="col-12 col-md-6 col-lg-4">
+            <section id="section2" class="col-12 col-md-6 col-lg-4 mb-5">
                 <article>
                     <div class="card2" style="width: 18rem;">
                         <img src="img/img-card-hamburgesa.svg" class="card-img-top" alt="Imagen 2">
@@ -149,6 +149,59 @@
             </section>
         </div>
     </div>
+
+    <article>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pizzas-tab" data-bs-toggle="tab" href="#pizzas" role="tab" aria-controls="pizzas" aria-selected="true">Pizzas</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="bebidas-tab" data-bs-toggle="tab" href="#bebidas" role="tab" aria-controls="bebidas" aria-selected="false">Bebidas</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="tacos-tab" data-bs-toggle="tab" href="#tacos" role="tab" aria-controls="tacos" aria-selected="false">Tacos</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active d-flex justify-content-around" id="pizzas" role="tabpanel" aria-labelledby="pizzas-tab">
+                <div class="position-relative d-flex flex-column align-items-center">
+                    <img alt="Pizza" class="img-fluid img-small mb-3 product-image1">
+                </div>
+                <div class="position-relative d-flex flex-column align-items-center">
+                    <img  alt="Pizza" class="img-fluid img-small mb-3 product-image1">
+                </div>
+                <div class="position-relative d-flex flex-column align-items-center">
+                    <img  alt="Pizza" class="img-fluid img-small mb-3 product-image1">
+                </div>
+            </div>
+
+            <div class="tab-pane fade d-flex justify-content-around" id="bebidas" role="tabpanel" aria-labelledby="bebidas-tab">
+                <div class="position-relative d-flex flex-column align-items-center">
+                    <img  alt="Jamaica" class="img-fluid img-small mb-3 product-image2">
+                </div>
+                <div class="position-relative d-flex flex-column align-items-center">
+                    <img  alt="Margarita" class="img-fluid img-small mb-3 product-image2">
+                </div>
+                <div class="position-relative d-flex flex-column align-items-center">
+                    <img  alt="Horchata" class="img-fluid img-small mb-3 product-image2">
+                </div>          
+            </div>
+
+            <div class="tab-pane fade d-flex justify-content-around" id="tacos" role="tabpanel" aria-labelledby="tacos-tab">
+                <div class="position-relative d-flex flex-column align-items-center">
+                    <img  alt="Pastor" class="img-fluid img-small mb-3 product-image3">
+                </div>
+                <div class="position-relative d-flex flex-column align-items-center">
+                    <img  alt="Asada" class="img-fluid img-small mb-3 product-image3">
+                </div>
+                <div class="position-relative d-flex flex-column align-items-center">
+                    <img  alt="Taco" class="img-fluid img-small mb-3 product-image3">
+                </div>
+            </div>
+        </div>
+    </article>
+
+
 
     <footer>
         <!-- Contenido del pie de página -->
