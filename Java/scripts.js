@@ -39,20 +39,46 @@ document.getElementById('tacos-tab').addEventListener('click', function() {
     images[2].src = 'img/Store-taco-guacamole.png';
 });
 
-
 $(document).ready(function() {
-    $('#carouselExampleIndicators').on('slid.bs.carousel', function() {
+    $(window).scroll(function() {
+        var scrollPosition = $(this).scrollTop();
+        var windowHeight = $(this).height();
         var currentIndex = $('div.active').index();
-        switch (currentIndex) {
-            case 0:
-                $('.header, .footer').css('background-color', '#FFDE59');
-                break;
-            case 1:
-                $('.header, .footer').css('background-color', '#301613');
-                break;
-            case 2:
-                $('.header, .footer').css('background-color', '#9DC135');
-                break;
+
+        if (scrollPosition > windowHeight / 2) {
+            $('.header, .footer').css('background-color', '#301613'); // Color estático para el header y el footer
+        } else {
+            switch (currentIndex) {
+                case 0:
+                    $('.header, .footer').css('background-color', '#FFDE59');
+                    break;
+                case 1:
+                    $('.header, .footer').css('background-color', '#301613');
+                    break;
+                case 2:
+                    $('.header, .footer').css('background-color', '#9DC135');
+                    break;
+            }
+        }
+    });
+
+    $('#carouselExampleIndicators').on('slid.bs.carousel', function() {
+        var scrollPosition = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        var currentIndex = $('div.active').index();
+
+        if (scrollPosition <= windowHeight / 2) {
+            switch (currentIndex) {
+                case 0:
+                    $('.header, .footer').css('background-color', '#FFDE59');
+                    break;
+                case 1:
+                    $('.header, .footer').css('background-color', '#301613');
+                    break;
+                case 2:
+                    $('.header, .footer').css('background-color', '#9DC135');
+                    break;
+            }
         }
     });
 });
