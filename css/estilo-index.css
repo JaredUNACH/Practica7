@@ -117,3 +117,149 @@ header p {
     width: 200px;
     height: auto;
 }
+.social {
+    display: grid;
+    position: relative;
+    place-items: center;
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+    border: 3px solid #ddd;
+    border-radius: 50%;
+    background-color: #ddd;
+    cursor: pointer;
+    margin: 0.5rem;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.7s ease;
+}
+
+.instagram {
+    background-image: url(../img/instagram.svg);
+}
+
+.facebook {
+    background-image: url(../img/facebook.svg);
+}
+
+.social:hover {
+    transform: rotateY(720deg);
+}
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #FFDE59;
+    position: relative; 
+    width: 80%; 
+    height: 50vh; 
+    margin: auto; 
+    padding: 20px; /* Añadi un padding al contenedor */
+    box-sizing: border-box; /* Incluye el padding en el tamaño del contenedor */
+}
+
+.container2 .nombre {
+    margin-bottom: 20px; /* Añadi un margen debajo del nombre del restaurante */
+}
+
+.container2 .info {
+    margin-bottom: 20px; /* Añadi un margen debajo de la información del restaurante */
+}
+
+.container2 .info p {
+    margin-bottom: 10px; /* Añadi un margen debajo de cada línea de información */
+}
+
+.container2 .info button {
+    background-color: #301613; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+}
+
+.container2 .info button:hover {
+    background-color: #9DC135; /* Cambia el color de fondo del botón cuando el mouse pasa por encima */
+}
+
+.social {
+    margin-top: auto;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFDE59;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .section {
+    flex: 1;
+}
+.footer .section {
+    flex: 1;
+    padding: 24px; 
+    border-right: 1px solid white;
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño del elemento */
+}
+
+.footer .section.right {
+    border-right: none;
+}
+
+.footer .section.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .section i {
+    color: black; /* Establece el color de todos los iconos a negro */
+}
+
+.footer .section.left i {
+    font-size: 3em; 
+    transition: all 0.6s ease; 
+}
+
+.footer .section.left i:hover {
+    transform: rotate(20deg); 
+    cursor: pointer; 
+}
+
+.footer .section.center form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .section.center button {
+    background: none;
+    border: none;
+}
+
+.footer .section.center i {
+    font-size: 3em; 
+    transition: all 0.6s ease; 
+}
+
+.footer .section.center i:hover {
+    transform: rotate(20deg); 
+    cursor: pointer; 
+}
+.footer .section.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .section.right i {
+    font-size: 3em; 
+    transition: all 0.6s ease; 
+}
+
+.footer .section.right i:hover {
+    transform: rotate(20deg); 
+    cursor: pointer; 
+}
